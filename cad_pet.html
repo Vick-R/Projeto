@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="cad_pet.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-box">
+            <img src="cad_pet_img.svg" class="img-box" alt="left-img">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastro</h1>
+                    </div>
+                    <div class="login-btn">
+                        <button><a href="#">Enviar imagens</a></button>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Seu nome completo</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite aqui o seu nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="user">Nome do animal</label>
+                        <input id="user" type="text" name="user" placeholder="Digite o nome do bichinho" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(XX) XXXX-XXXX" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cidade">Cidade</label>
+                        <input id="cidade" type="cidade" name="cidade" placeholder="Coloque sua cidade" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="endereco">Endereço</label>
+                        <input id="endereco" type="password" name="endereco" placeholder="Coloqui aqui seu endereço" required>
+                    </div>
+                </div>
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Termos de uso</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">Concordo com os termos de uso</label>
+                        </div>   
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="#">Enviar</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
