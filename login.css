@@ -148,12 +148,11 @@ body {
     
     .btn-cadastro{
     width: 8%;
-    padding: 8px 0px;
+    padding: 10px 0px;
     margin: 25px;
     border: none;
-    border-radius: 12px;
+    border-radius: 5px;
     outline: none;
-    text-transform: uppercase;
     font-weight: 1000;
     letter-spacing: 1px;
     color: #2b134b;
