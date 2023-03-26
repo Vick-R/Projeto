@@ -179,43 +179,45 @@ body{
  }
 
 
- .picture__input {
-    display: none;
-  }
-  
-  .picture {
-    width: 150px;
-    aspect-ratio: 16/9;
-    background: #2f2841;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #aaa;
-    border: 2px dashed currentcolor;
-    cursor: pointer;
-    font-family: sans-serif;
-    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+ 
+  .btn-login2 {
+    width: 30%;
+    margin-top: 1rem;
+    padding: 2px 0px;
+    border: none;
+    border-radius: 0.1rem;
     outline: none;
-    overflow: hidden;
-  }
-  
-  .picture:hover {
-    color: #777;
-    background: #ccc;
-  }
-  
-  .picture:active {
-    border-color: turquoise;
-    color: turquoise;
-    background: #eee;
-  }
-  
-  .picture:focus {
-    color: #777;
-    background: #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  .picture__img {
-    max-width: 100%;
-  }
+    font-weight: 520;
+    color: #3a1775;
+    background: #77ffc0;
+    cursor: pointer;
+ }
+
+ input[type="file"] {
+    display: none;
+
+ }
+
+ label span:nth-child(2){
+    padding: 2px;
+    border: 2px solid #5a7785;
+    border-radius: 0.2rem;
+    color: #52ddaf;
+    font-size: 1.0rem;
+   
+    
+ }
+
+ label span:nth-child(1){
+
+    color: #ffffff;
+    background-color: #476675;
+    padding: 4px;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    
+ }
+
+
+
+ 

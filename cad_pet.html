@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Cadastro</title>
     <link rel="stylesheet" href="cad_pet.css">
+    <script src="app.js" defer></script>
 
 </head>
 <body>
@@ -15,15 +16,11 @@
             <img src="cad_pet_img.svg" class="img-box" alt="left-img">
         </div>
         <div class="form">
-            <form action="#">
+            <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
                 <div class="form-header">
                     <div class="title">
-                        <h1>Cadastro</h1>
+                        <h1>Cadastro do Pet</h1>
                     </div>
-                    <label class="picture" tabIndex="0">
-                        <input type="file" accept="image/*" class="picture__input"/>
-                        <span class="picture__image">Fotos aqui!</span>
-                    </label>
                 </div>
                 <div class="input-group">
                     <div class="input-box">
@@ -57,20 +54,21 @@
                     </div>
                 </div>
                 <div class="gender-inputs">
-                    <div class="gender-title">
-                        <h6>Termos de uso</h6>
+                    <span></span>
+                    <div class="continue-button">
+                        
+                        <input class="btn-login1" type="file" id="file" name="image" accept="image/*">
+                        <label for="file">
+                            <span>Procurar</span>
+                            <span class="text">Selecionar imagem</span>
+                        </label>
                     </div>
-
-                    <div class="gender-group">
-                        <div class="gender-input">
-                            <input type="checkbox" id="checkbox1" name="gender">
-                            <label for="female">Concordo com os termos de uso</label>
-                        </div>   
+                    <div class="continue-button">
+                        <input class="btn-login2" type="submit" value="Upload">
                     </div>
                 </div>
-
                 <div class="continue-button">
-                    <input class="btn-login" type="submit" value="Login">
+                    <input class="btn-login" type="submit" value="Enviar">
                 </div>
             </form>
         </div>
